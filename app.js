@@ -20,7 +20,6 @@ app.use('/api/v1/stages', stages);
 app.use(notFound);
 app.use(errorHandler);
 
-// Изменен порт с 5000 на 3000 согласно заданию и Postman коллекции
 const port = process.env.PORT || 3000;
 
 const start = async () => {
@@ -33,5 +32,6 @@ const start = async () => {
     console.log(error);
   }
 };
+
 
 start();
